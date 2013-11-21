@@ -64,7 +64,7 @@ object InformationRetrievalApp {
       }
     }
     try {
-      // <boring magic> Always copy-paste it into your program (maybe):
+      // <boring magic> Always copy-paste it into your program:
       val sds: DataStore = Factory.createDataStore("gate.persist.SerialDataStore", "file:///" + serialDataStoreFilePath)
       sds.open()
       val corpus: Corpus = createTestCorpus()

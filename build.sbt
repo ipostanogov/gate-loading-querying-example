@@ -2,7 +2,7 @@ import AssemblyKeys._ // put this at the top of the file
 
 assemblySettings
 
-name := "textyour"
+name := "gate-loading-querying-example"
 
 version := "0.1"
 
