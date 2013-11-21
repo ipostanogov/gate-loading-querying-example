@@ -27,7 +27,7 @@ import org.apache.commons.io.FileUtils
 import org.apache.commons.io.FilenameUtils.concat
 import org.apache.log4j.{Level, Logger}
 
-object InformationRetrievalApp extends App {
+object InformationRetrievalApp {
   val appFolderPath = concat(System.getProperty("user.home"), ".textyour")
   val indexLocationPath: String = concat(appFolderPath, "index")
   val pluginsFolderPath = concat(appFolderPath, "plugins")
@@ -47,9 +47,7 @@ object InformationRetrievalApp extends App {
     }
   }
 
-  run()
-
-  def run() {
+  def main(args: Array[String]) {
     Logger.getRootLogger.setLevel(Level.OFF)
     try {
       initFolders()

@@ -8,6 +8,10 @@ version := "0.1"
 
 scalaVersion := "2.10.2"
 
+libraryDependencies += "uk.ac.gate" % "gate-core" % "7.1"
+
+libraryDependencies += "org.scala-lang" % "scala-reflect" % "2.10.2"
+
 javaHome := {
   var s = System.getenv("JAVA_HOME")
   //
